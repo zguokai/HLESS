@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: Kain
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.7.0_71
+Class-Path: velocity-1.7.jar velocity-tools-2.0.jar commons-collections-3.2.1.jar commons-lang-2.4.jar commons-logging-1.1.jar
+Main-Class: com.kain.HLess
+
+
