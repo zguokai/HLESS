@@ -27,8 +27,9 @@ public class HLess {
         String pwd = System.getProperty("user.dir");
 
         String vmFileName = args[0] + TEMPLATE_FILE_SUFFIX;
-        String templatePath = pwd + File.separator + "template";
-        String distPath = pwd + File.separator + "dist";
+        String templatePath = System.getProperty("t", pwd + File.separator + "template");
+        String distPath = System.getProperty("d", pwd);
+
 
         try  {
             String file = templatePath + File.separator + vmFileName;
@@ -38,11 +39,10 @@ public class HLess {
                 return;
             }
 
-            System.out.println(templatePath);
+
             Properties p = new Properties();
             p.setProperty(Velocity.INPUT_ENCODING, "UTF-8");
             p.setProperty(Velocity.OUTPUT_ENCODING, "UTF-8");
-//            p.setProperty("file.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
             p.setProperty(Velocity.FILE_RESOURCE_LOADER_PATH, templatePath);
 
 
