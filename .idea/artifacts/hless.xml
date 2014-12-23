@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="hless">
-    <output-path>$PROJECT_DIR$/bin</output-path>
-    <root id="archive" name="hless.jar">
-      <element id="module-output" name="com.kain" />
-    </root>
-  </artifact>
-</component>
